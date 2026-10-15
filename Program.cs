@@ -1,27 +1,7 @@
-﻿string characterName = "Watcher";
-int health = 70;
-int energy = 3;
+﻿
+string characterName = "Watcher";
 
-Card strike = new Card("Strike", 6);
-Card defend = new Card("Defend", 5);
+Card strike = new Card("Strike", 1, 6, CardType.Attack);
+Card defend = new Card("Defend", 1, 5, CardType.Skill);
+Card wrath = new Card("Eruption", 2, 9, CardType.Attack);
 
-Console.WriteLine($"Character: {characterName}");
-Console.WriteLine($"Health: {health}");
-Console.WriteLine($"Energy: {energy}");
-Console.WriteLine($"Card: {strike.Name}");
-Console.WriteLine($"Damage: {strike.Damage}");
-Console.WriteLine($"Card: {defend.Name}");
-Console.WriteLine($"Block: {defend.Damage}");
-
-
-public class Card
-{
-    public string Name { get; set; }
-    public int Damage { get; set; }
-
-    public Card(string name, int damage)
-    {
-        Name = name;
-        Damage = damage;
-    }
-}
