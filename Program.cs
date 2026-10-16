@@ -1,9 +1,10 @@
-﻿string characterName = "Watcher";
+﻿//string characterName = "Watcher";
 
-Card strike = new Card("Strike", 1, 6, CardType.Attack);
-Card defend = new Card("Defend", 1, 5, CardType.Skill);
-Card eruption = new Card("Eruption", 2, 9, CardType.Attack);
-Card vigilance = new Card("Vigilance", 2, 8, CardType.Skill);
+//Name,Cost,Damage,Block,Type
+Card strike = new Card("Strike", 1, 6, 0, CardType.Attack);
+Card defend = new Card("Defend", 1, 0, 5, CardType.Skill);
+Card eruption = new Card("Eruption", 2, 9, 0, CardType.Attack);
+Card vigilance = new Card("Vigilance", 2, 0, 8, CardType.Skill);
 
 List<Card> deck = new List<Card>();
 

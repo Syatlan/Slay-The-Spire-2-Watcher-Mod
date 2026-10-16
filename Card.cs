@@ -7,19 +7,21 @@ public enum CardType
     Power
 }
 
-// Represents a card in the game
 public class Card
 {
     public string Name { get; set; }
     public int Cost { get; set; }
-    public int Value { get; set; }
+    public int Damage { get; set; }
+    public int Block { get; set; }
     public CardType Type { get; set; }
 
-    public Card(string name, int cost, int value, CardType type)
+    public Card(string name, int cost, int damage, int block, CardType type)
     {
         Name = name;
         Cost = cost;
-        Value = value;
+        Damage = damage;
+        Block = block;
         Type = type;
     }
 }
+
