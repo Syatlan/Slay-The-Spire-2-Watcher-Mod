@@ -14,6 +14,4 @@ for (int i = 0; i < 4; i++)
 }
 
 deck.Add(eruption);
-deck.Add(vigilance);
-deck.Add(eruption);
 deck.Add(vigilance);    
